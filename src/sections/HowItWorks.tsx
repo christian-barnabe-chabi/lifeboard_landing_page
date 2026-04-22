@@ -1,3 +1,5 @@
+import { Monitor, Smartphone } from 'lucide-react'
+
 const steps = [
   {
     n: '01',
@@ -47,9 +49,15 @@ export function HowItWorks() {
             téléchargez l'application mobile sur iOS et Android. Vos données sont disponibles partout, en temps réel.
           </p>
           <div className="flex justify-center gap-3 mt-8">
-            <span className="bg-white/10 border border-white/10 rounded-lg px-4 py-2 text-sm font-medium">🌐 Web</span>
-            <span className="bg-white/10 border border-white/10 rounded-lg px-4 py-2 text-sm font-medium"> iOS</span>
-            <span className="bg-white/10 border border-white/10 rounded-lg px-4 py-2 text-sm font-medium">🤖 Android</span>
+            <span className="flex items-center gap-2 bg-white/10 border border-white/10 rounded-lg px-4 py-2 text-sm font-medium">
+              <Monitor size={14} /> Web
+            </span>
+            <span className="flex items-center gap-2 bg-white/10 border border-white/10 rounded-lg px-4 py-2 text-sm font-medium">
+              <Smartphone size={14} /> iOS
+            </span>
+            <span className="flex items-center gap-2 bg-white/10 border border-white/10 rounded-lg px-4 py-2 text-sm font-medium">
+              <Smartphone size={14} /> Android
+            </span>
           </div>
         </div>
       </div>

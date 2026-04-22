@@ -29,7 +29,7 @@ export function Hero() {
       {/* Hero content */}
       <div className="relative z-10 max-w-4xl mx-auto px-6 py-24 text-center">
         <div className="inline-flex items-center gap-2 bg-blue-500/10 border border-blue-500/20 rounded-full px-4 py-1.5 text-sm text-blue-300 mb-8">
-          <span className="w-1.5 h-1.5 bg-blue-400 rounded-full"></span>
+          <span className="w-1.5 h-1.5 bg-blue-400 rounded-full" />
           Disponible sur web et mobile
         </div>
 
