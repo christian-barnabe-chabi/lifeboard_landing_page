@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom'
 
 const APP_URL = 'https://app.mylifeboard.app'
 const APP_STORE_URL = '#'
