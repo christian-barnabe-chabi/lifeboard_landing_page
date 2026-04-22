@@ -68,7 +68,7 @@ const plans = [
 export function Pricing() {
   return (
     <section id="pricing" className="py-24 bg-gray-50">
-      <div className="max-w-5xl mx-auto px-6">
+      <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Tarifs simples et transparents</h2>
           <p className="text-xl text-gray-500">
@@ -76,7 +76,7 @@ export function Pricing() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6">
           {plans.map(plan => (
             <div
               key={plan.name}
