@@ -35,7 +35,7 @@ export function Privacy() {
       <Section title="6. Services tiers">
         <p>LifeBoard utilise les services suivants :</p>
         <ul>
-          <li><strong>App Store / Google Play</strong> : gestion des abonnements mobiles</li>
+          <li><strong>Processeur de paiement</strong> : gestion des abonnements via l'app web</li>
           <li><strong>Hébergement</strong> : infrastructure serveur pour stocker vos données</li>
         </ul>
         <p className="mt-3">Ces prestataires sont contractuellement tenus de respecter la confidentialité de vos données.</p>

@@ -29,7 +29,7 @@ export function Terms() {
           <li><strong>Pro Annuel</strong> : 35,99 € / an, renouvelable automatiquement</li>
           <li><strong>Lifetime</strong> : 89 € paiement unique, accès à vie</li>
         </ul>
-        <p className="mt-3">Les abonnements sont gérés via l'application mobile. Vous pouvez résilier à tout moment depuis les paramètres de votre compte App Store ou Google Play.</p>
+        <p className="mt-3">Les abonnements sont gérés depuis l'application web <strong>app.mylifeboard.app</strong>. Vous pouvez résilier à tout moment depuis les paramètres de votre compte.</p>
       </Section>
 
       <Section title="5. Utilisation acceptable">

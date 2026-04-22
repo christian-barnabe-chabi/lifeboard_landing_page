@@ -138,7 +138,7 @@ export function Pricing() {
         </div>
 
         <p className="text-center text-sm text-gray-400 mt-8">
-          L'abonnement se gère depuis l'application mobile · Résiliation à tout moment
+          L'abonnement se gère depuis l'app web · Résiliation à tout moment
         </p>
       </div>
     </section>
