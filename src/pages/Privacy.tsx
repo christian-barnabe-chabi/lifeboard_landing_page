@@ -29,7 +29,7 @@ export function Privacy() {
       </Section>
 
       <Section title="5. Cookies">
-        <p>LifeBoard utilise uniquement des cookies techniques nécessaires au fonctionnement du service (authentification via JWT). Aucun cookie publicitaire ou de tracking tiers n'est utilisé.</p>
+        <p>LifeBoard utilise uniquement des cookies techniques nécessaires au fonctionnement du service. Aucun cookie publicitaire ou de tracking tiers n'est utilisé.</p>
       </Section>
 
       <Section title="6. Services tiers">
