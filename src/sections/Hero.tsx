@@ -31,7 +31,7 @@ export function Hero() {
           Tableau de bord de vie personnel
         </p>
         <h1 className="text-6xl md:text-8xl font-bold tracking-tight leading-none text-black mb-8">
-          Pilotez<br />votre vie.
+          Pilotez votre vie,<br />simplement.
         </h1>
         <p className="text-xl text-gray-500 max-w-lg leading-relaxed mb-12">
           Finances, habitudes, objectifs, journal ... tout ce qui compte, au même endroit. Simple, privé, puissant.
