@@ -7,12 +7,7 @@ export function Hero() {
     <section className="relative overflow-hidden bg-gradient-to-br from-slate-950 via-slate-900 to-blue-950 text-white">
       {/* Nav */}
       <nav className="relative z-10 flex items-center justify-between px-6 py-5 max-w-6xl mx-auto">
-        <div className="flex items-center gap-2">
-          <div className="w-8 h-8 bg-blue-500 rounded-lg flex items-center justify-center">
-            <span className="text-white font-bold text-sm">L</span>
-          </div>
-          <span className="font-semibold text-lg tracking-tight">LifeBoard</span>
-        </div>
+        <span className="font-semibold text-lg tracking-tight">LifeBoard</span>
         <div className="hidden md:flex items-center gap-8 text-sm text-slate-300">
           <a href="#features" className="hover:text-white transition-colors">Fonctionnalités</a>
           <a href="#how" className="hover:text-white transition-colors">Comment ça marche</a>

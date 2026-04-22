@@ -3,7 +3,8 @@ const APP_URL = 'https://app.mylifeboard.app'
 const plans = [
   {
     name: 'Essai gratuit',
-    price: '0€',
+    amount: 'Gratuit',
+    currency: '',
     period: '7 jours',
     description: 'Accès complet, aucune carte requise.',
     features: [
@@ -18,7 +19,8 @@ const plans = [
   },
   {
     name: 'Pro Mensuel',
-    price: '3,59€',
+    amount: '3,59',
+    currency: '€',
     period: 'par mois',
     description: 'Pour ceux qui veulent rester flexibles.',
     features: [
@@ -33,14 +35,15 @@ const plans = [
   },
   {
     name: 'Pro Annuel',
-    price: '35,99€',
+    amount: '35,99',
+    currency: '€',
     period: 'par an',
     badge: 'Économisez 17%',
     description: 'Le meilleur rapport qualité-prix.',
     features: [
       'Tout du plan mensuel',
       'Facturation annuelle',
-      'Économisez 7,09€ par an',
+      'Économisez 7,09 € par an',
       'Support prioritaire',
     ],
     cta: 'Choisir Annuel',
@@ -49,7 +52,8 @@ const plans = [
   },
   {
     name: 'Lifetime',
-    price: '89€',
+    amount: '89',
+    currency: '€',
     period: 'une seule fois',
     badge: 'Meilleure offre',
     description: 'Payez une fois, accédez à vie.',
@@ -98,8 +102,13 @@ export function Pricing() {
                   )}
                 </div>
                 <div className="flex items-baseline gap-1">
+                  {plan.currency && (
+                    <span className={`text-lg font-semibold ${plan.highlight ? 'text-blue-200' : 'text-gray-400'}`}>
+                      {plan.currency}
+                    </span>
+                  )}
                   <span className={`text-4xl font-bold ${plan.highlight ? 'text-white' : 'text-gray-900'}`}>
-                    {plan.price}
+                    {plan.amount}
                   </span>
                   <span className={`text-sm ${plan.highlight ? 'text-blue-200' : 'text-gray-400'}`}>
                     / {plan.period}
