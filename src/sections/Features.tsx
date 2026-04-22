@@ -4,72 +4,52 @@ const features = [
   {
     icon: TrendingUp,
     title: 'Finance personnelle',
-    description: 'Suivez vos revenus, dépenses, investissements, dettes et patrimoine net en temps réel. Graphiques et indicateurs clés inclus.',
-    color: 'bg-green-50 border-green-100',
-    iconColor: 'text-green-600',
-    iconBg: 'bg-green-100',
+    description: 'Revenus, dépenses, investissements, patrimoine net. Tous vos indicateurs financiers en un coup d\'œil.',
   },
   {
     icon: Flame,
     title: 'Suivi des habitudes',
-    description: 'Créez des habitudes quotidiennes, hebdomadaires ou personnalisées. Visualisez vos séquences et progressions.',
-    color: 'bg-orange-50 border-orange-100',
-    iconColor: 'text-orange-600',
-    iconBg: 'bg-orange-100',
+    description: 'Créez des habitudes quotidiennes ou personnalisées. Visualisez vos séquences sur la durée.',
   },
   {
     icon: Target,
     title: 'Objectifs de vie',
-    description: 'Définissez vos objectifs à court et long terme, suivez votre avancement avec des jalons et des pourcentages.',
-    color: 'bg-blue-50 border-blue-100',
-    iconColor: 'text-blue-600',
-    iconBg: 'bg-blue-100',
+    description: 'Définissez vos objectifs à court et long terme. Suivez votre progression avec des jalons.',
   },
   {
     icon: BookOpen,
     title: 'Journal personnel',
-    description: 'Un espace privé pour écrire, réfléchir et noter votre humeur au quotidien. Revues hebdomadaires incluses.',
-    color: 'bg-purple-50 border-purple-100',
-    iconColor: 'text-purple-600',
-    iconBg: 'bg-purple-100',
+    description: 'Un espace privé pour écrire, réfléchir et noter votre humeur. Revues hebdomadaires incluses.',
   },
   {
     icon: Kanban,
     title: 'Kanban & Tâches',
-    description: 'Organisez vos projets et tâches avec un tableau kanban flexible. Priorités, sous-tâches, dates d\'échéance.',
-    color: 'bg-slate-50 border-slate-100',
-    iconColor: 'text-slate-600',
-    iconBg: 'bg-slate-100',
+    description: 'Organisez projets et tâches avec un tableau flexible. Priorités, sous-tâches, échéances.',
   },
   {
     icon: CalendarDays,
     title: 'Calendrier unifié',
-    description: 'Une vue calendrier qui agrège tâches, objectifs, habitudes et entrées de journal. Tout votre planning au même endroit.',
-    color: 'bg-cyan-50 border-cyan-100',
-    iconColor: 'text-cyan-600',
-    iconBg: 'bg-cyan-100',
+    description: 'Une vue qui agrège tâches, objectifs, habitudes et journal. Tout votre planning au même endroit.',
   },
 ]
 
 export function Features() {
   return (
-    <section id="features" className="py-24 bg-gray-50">
-      <div className="max-w-6xl mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Tout ce dont vous avez besoin</h2>
-          <p className="text-xl text-gray-500 max-w-2xl mx-auto">
-            Des modules intégrés et interconnectés pour piloter chaque aspect de votre vie — finances, santé, ambitions, réflexion.
-          </p>
+    <section id="features" className="py-32 px-8 border-t border-gray-100">
+      <div className="max-w-5xl mx-auto">
+        <div className="mb-20">
+          <p className="text-sm font-medium text-gray-400 tracking-widest uppercase mb-4">Fonctionnalités</p>
+          <h2 className="text-4xl md:text-5xl font-bold tracking-tight leading-tight max-w-lg">
+            Des modules interconnectés pour piloter chaque aspect de votre vie.
+          </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-gray-100">
           {features.map(f => (
-            <div key={f.title} className={`rounded-2xl border p-6 ${f.color}`}>
-              <div className={`w-10 h-10 rounded-xl ${f.iconBg} flex items-center justify-center mb-4`}>
-                <f.icon size={20} className={f.iconColor} />
-              </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">{f.title}</h3>
-              <p className="text-gray-600 text-sm leading-relaxed">{f.description}</p>
+            <div key={f.title} className="bg-white p-8 hover:bg-gray-50 transition-colors">
+              <f.icon size={20} className="text-black mb-5" strokeWidth={1.5} />
+              <h3 className="text-base font-semibold text-black mb-2">{f.title}</h3>
+              <p className="text-sm text-gray-500 leading-relaxed">{f.description}</p>
             </div>
           ))}
         </div>

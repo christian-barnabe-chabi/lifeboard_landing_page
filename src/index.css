@@ -1,7 +1,15 @@
 @import "tailwindcss";
 
-* { box-sizing: border-box; }
-body { margin: 0; font-family: system-ui, -apple-system, sans-serif; }
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', sans-serif;
+  background: #fff;
+  color: #0f0f0f;
+  -webkit-font-smoothing: antialiased;
+}
+
 .prose ul { list-style: disc; padding-left: 1.25rem; margin: 0.5rem 0; }
 .prose ul li { margin-bottom: 0.25rem; }
 .prose ol { list-style: decimal; padding-left: 1.25rem; margin: 0.5rem 0; }

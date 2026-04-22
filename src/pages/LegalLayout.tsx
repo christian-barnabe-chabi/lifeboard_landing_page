@@ -9,13 +9,13 @@ interface Props {
 export function LegalLayout({ title, lastUpdated, children }: Props) {
   return (
     <div className="min-h-screen bg-white text-gray-900 antialiased">
-      <nav className="border-b border-gray-100 px-6 py-4">
+      <nav className="border-b border-gray-100 px-8 py-6">
         <div className="max-w-3xl mx-auto flex items-center justify-between">
-          <Link to="/" className="font-semibold text-lg tracking-tight text-gray-900 hover:text-blue-600 transition-colors">
+          <Link to="/" className="font-semibold tracking-tight text-black">
             LifeBoard
           </Link>
-          <Link to="/" className="text-sm text-gray-500 hover:text-gray-900 transition-colors">
-            ← Retour à l'accueil
+          <Link to="/" className="text-sm text-gray-400 hover:text-black transition-colors">
+            ← Retour
           </Link>
         </div>
       </nav>

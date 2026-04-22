@@ -4,80 +4,52 @@ const plans = [
   {
     name: 'Essai gratuit',
     amount: 'Gratuit',
-    currency: '',
     period: '7 jours',
     description: 'Accès complet, aucune carte requise.',
-    features: [
-      'Tous les modules inclus',
-      'Web + Mobile',
-      'Données sécurisées',
-      'Support par email',
-    ],
+    features: ['Tous les modules inclus', 'Web + Mobile', 'Données sécurisées'],
     cta: 'Démarrer l\'essai',
-    href: APP_URL,
     highlight: false,
   },
   {
     name: 'Pro Mensuel',
     amount: '$3.59',
-    currency: '',
     period: 'par mois',
     description: 'Pour ceux qui veulent rester flexibles.',
-    features: [
-      'Accès illimité à tous les modules',
-      'Web + Mobile synchronisés',
-      'Mises à jour et nouvelles fonctionnalités',
-      'Support prioritaire',
-    ],
+    features: ['Accès illimité à tous les modules', 'Web + Mobile synchronisés', 'Support prioritaire'],
     cta: 'Choisir Mensuel',
-    href: APP_URL,
     highlight: false,
   },
   {
     name: 'Pro Annuel',
     amount: '$35.99',
-    currency: '',
     period: 'par an',
     badge: 'Économisez 17%',
     description: 'Le meilleur rapport qualité-prix.',
-    features: [
-      'Tout du plan mensuel',
-      'Facturation annuelle',
-      'Économisez $7.09 par an',
-      'Support prioritaire',
-    ],
+    features: ['Tout du plan mensuel', 'Économisez $7.09 par an', 'Support prioritaire'],
     cta: 'Choisir Annuel',
-    href: APP_URL,
     highlight: true,
   },
   {
     name: 'Lifetime',
     amount: '$89',
-    currency: '',
     period: 'une seule fois',
     badge: 'Meilleure offre',
     description: 'Payez une fois, accédez à vie.',
-    features: [
-      'Accès illimité à vie',
-      'Toutes les futures fonctionnalités',
-      'Web + Mobile pour toujours',
-      'Support prioritaire à vie',
-    ],
+    features: ['Accès illimité à vie', 'Toutes les futures fonctionnalités', 'Support prioritaire à vie'],
     cta: 'Obtenir l\'accès à vie',
-    href: APP_URL,
     highlight: false,
   },
 ]
 
 export function Pricing() {
   return (
-    <section id="pricing" className="py-24 bg-gray-50">
-      <div className="max-w-6xl mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Tarifs simples et transparents</h2>
-          <p className="text-xl text-gray-500">
-            Essayez gratuitement, souscrivez quand vous êtes prêt.
-          </p>
+    <section id="pricing" className="py-32 px-8 border-t border-gray-100">
+      <div className="max-w-5xl mx-auto">
+        <div className="mb-20">
+          <p className="text-sm font-medium text-gray-400 tracking-widest uppercase mb-4">Tarifs</p>
+          <h2 className="text-4xl md:text-5xl font-bold tracking-tight leading-tight">
+            Simple et transparent.
+          </h2>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6">
@@ -86,49 +58,47 @@ export function Pricing() {
               key={plan.name}
               className={`rounded-2xl p-7 flex flex-col ${
                 plan.highlight
-                  ? 'bg-blue-600 text-white shadow-xl shadow-blue-500/20'
-                  : 'bg-white border border-gray-200'
+                  ? 'bg-black text-white'
+                  : 'border border-gray-200 bg-white'
               }`}
             >
-              <div className="mb-6">
-                <div className="flex items-center justify-between mb-1">
-                  <span className={`text-sm font-semibold ${plan.highlight ? 'text-blue-100' : 'text-gray-500'}`}>
+              <div className="mb-8 flex-1">
+                <div className="flex items-start justify-between mb-6">
+                  <span className={`text-xs font-semibold uppercase tracking-wider ${plan.highlight ? 'text-gray-400' : 'text-gray-400'}`}>
                     {plan.name}
                   </span>
                   {plan.badge && (
-                    <span className="bg-yellow-400 text-yellow-900 text-xs font-bold px-2 py-0.5 rounded-full">
+                    <span className={`text-xs font-semibold px-2 py-0.5 rounded-full ${plan.highlight ? 'bg-white/10 text-white' : 'bg-gray-100 text-gray-600'}`}>
                       {plan.badge}
                     </span>
                   )}
                 </div>
-                <div className="flex items-baseline gap-1">
-                  <span className={`text-4xl font-bold ${plan.highlight ? 'text-white' : 'text-gray-900'}`}>
+
+                <div className="mb-1">
+                  <span className={`text-4xl font-bold tabular-nums ${plan.highlight ? 'text-white' : 'text-black'}`}>
                     {plan.amount}
                   </span>
-                  <span className={`text-sm ${plan.highlight ? 'text-blue-200' : 'text-gray-400'}`}>
-                    / {plan.period}
-                  </span>
                 </div>
-                <p className={`text-sm mt-2 ${plan.highlight ? 'text-blue-100' : 'text-gray-500'}`}>
-                  {plan.description}
+                <p className={`text-xs mb-6 ${plan.highlight ? 'text-gray-400' : 'text-gray-400'}`}>
+                  {plan.period}
                 </p>
+
+                <ul className="space-y-2">
+                  {plan.features.map(f => (
+                    <li key={f} className={`text-sm flex items-start gap-2 ${plan.highlight ? 'text-gray-300' : 'text-gray-500'}`}>
+                      <span className={`mt-0.5 shrink-0 ${plan.highlight ? 'text-gray-400' : 'text-gray-300'}`}>—</span>
+                      {f}
+                    </li>
+                  ))}
+                </ul>
               </div>
 
-              <ul className="space-y-3 flex-1 mb-8">
-                {plan.features.map(f => (
-                  <li key={f} className="flex items-start gap-2 text-sm">
-                    <span className={plan.highlight ? 'text-blue-200' : 'text-green-500'}>✓</span>
-                    <span className={plan.highlight ? 'text-blue-50' : 'text-gray-600'}>{f}</span>
-                  </li>
-                ))}
-              </ul>
-
               <a
-                href={plan.href}
-                className={`block text-center font-semibold py-3 rounded-xl transition-colors ${
+                href={APP_URL}
+                className={`block text-center text-sm font-semibold py-3 rounded-xl transition-colors ${
                   plan.highlight
-                    ? 'bg-white text-blue-600 hover:bg-blue-50'
-                    : 'bg-blue-600 text-white hover:bg-blue-500'
+                    ? 'bg-white text-black hover:bg-gray-100'
+                    : 'border border-gray-200 text-black hover:bg-gray-50'
                 }`}
               >
                 {plan.cta}
