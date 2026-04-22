@@ -58,7 +58,7 @@ export function Features() {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Tout ce dont vous avez besoin</h2>
           <p className="text-xl text-gray-500 max-w-2xl mx-auto">
-            Six modules intégrés pour piloter chaque aspect de votre vie — finances, santé, ambitions, réflexion.
+            Des modules intégrés et interconnectés pour piloter chaque aspect de votre vie — finances, santé, ambitions, réflexion.
           </p>
         </div>
 
