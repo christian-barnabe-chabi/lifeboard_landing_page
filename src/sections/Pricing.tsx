@@ -47,6 +47,22 @@ const plans = [
     href: APP_URL,
     highlight: true,
   },
+  {
+    name: 'Lifetime',
+    price: '89€',
+    period: 'une seule fois',
+    badge: 'Meilleure offre',
+    description: 'Payez une fois, accédez à vie.',
+    features: [
+      'Accès illimité à vie',
+      'Toutes les futures fonctionnalités',
+      'Web + Mobile pour toujours',
+      'Support prioritaire à vie',
+    ],
+    cta: 'Obtenir l\'accès à vie',
+    href: APP_URL,
+    highlight: false,
+  },
 ]
 
 export function Pricing() {
@@ -60,13 +76,13 @@ export function Pricing() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {plans.map(plan => (
             <div
               key={plan.name}
               className={`rounded-2xl p-7 flex flex-col ${
                 plan.highlight
-                  ? 'bg-blue-600 text-white shadow-xl shadow-blue-500/20 scale-105'
+                  ? 'bg-blue-600 text-white shadow-xl shadow-blue-500/20'
                   : 'bg-white border border-gray-200'
               }`}
             >
