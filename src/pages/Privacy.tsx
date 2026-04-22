@@ -25,7 +25,7 @@ export function Privacy() {
       </Section>
 
       <Section title="4. Stockage et sécurité">
-        <p>Vos données sont stockées sur des serveurs sécurisés. Les mots de passe sont hachés avec bcrypt et ne sont jamais stockés en clair. Les communications entre votre appareil et nos serveurs sont chiffrées via HTTPS.</p>
+        <p>Vos données sont stockées sur des serveurs sécurisés. Les mots de passe sont chiffrés et ne sont jamais stockés en clair. Les communications entre votre appareil et nos serveurs sont chiffrées via HTTPS.</p>
       </Section>
 
       <Section title="5. Cookies">
