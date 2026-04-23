@@ -8,6 +8,7 @@ import { Terms } from './pages/Terms'
 import { Privacy } from './pages/Privacy'
 import { DataDeletion } from './pages/DataDeletion'
 import { DataExport } from './pages/DataExport'
+import { Refund } from './pages/Refund'
 
 function Home() {
   return (
@@ -30,6 +31,7 @@ export default function App() {
         <Route path="/legal/privacy" element={<Privacy />} />
         <Route path="/legal/data-deletion" element={<DataDeletion />} />
         <Route path="/legal/data-export" element={<DataExport />} />
+        <Route path="/legal/refund" element={<Refund />} />
       </Routes>
     </BrowserRouter>
   )

@@ -34,6 +34,7 @@ export function LegalLayout({ title, lastUpdated, children }: Props) {
           <Link to="/legal/privacy" className="hover:text-gray-700 transition-colors">Politique de confidentialité</Link>
           <Link to="/legal/data-deletion" className="hover:text-gray-700 transition-colors">Suppression des données</Link>
           <Link to="/legal/data-export" className="hover:text-gray-700 transition-colors">Export des données</Link>
+          <Link to="/legal/refund" className="hover:text-gray-700 transition-colors">Remboursement</Link>
         </div>
       </footer>
     </div>

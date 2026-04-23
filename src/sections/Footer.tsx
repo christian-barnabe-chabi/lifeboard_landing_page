@@ -22,6 +22,7 @@ export function Footer() {
             <Link to="/legal/privacy" className="hover:text-black transition-colors">Confidentialité</Link>
             <Link to="/legal/data-deletion" className="hover:text-black transition-colors">Suppression des données</Link>
             <Link to="/legal/data-export" className="hover:text-black transition-colors">Export des données</Link>
+            <Link to="/legal/refund" className="hover:text-black transition-colors">Remboursement</Link>
           </div>
         </div>
       </div>
