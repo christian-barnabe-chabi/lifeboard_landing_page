@@ -58,7 +58,7 @@ export function Hero() {
       </main>
 
       {/* Divider */}
-      <div className="border-t border-gray-100 py-6 px-8 flex items-center justify-center gap-12 text-sm text-gray-400">
+      <div className="border-t border-gray-100 py-6 px-8 flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-sm text-gray-400">
         <span>Finance</span>
         <span className="text-gray-200">·</span>
         <span>Habitudes</span>
