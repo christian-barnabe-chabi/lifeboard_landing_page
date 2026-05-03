@@ -34,7 +34,7 @@ export function DataExport() {
           <li>Un fichier JSON sera téléchargé ou envoyé par e-mail</li>
         </ol>
         <p className="mt-4"><strong>Option 2 — Par e-mail :</strong></p>
-        <p>Envoyez une demande à <a href="mailto:support@mylifeboard.app?subject=Demande d'export de données" className="text-blue-600 hover:underline">support@mylifeboard.app</a> depuis l'adresse e-mail associée à votre compte.</p>
+        <p>Envoyez une demande à <a href="mailto:support@mylifeboard.app?subject=Demande d'export de données" style={{ color: "var(--color-primary)" }} className="hover:underline">support@mylifeboard.app</a> depuis l'adresse e-mail associée à votre compte.</p>
         <p className="mt-2">Objet suggéré : <em>"Demande d'export de données"</em></p>
       </Section>
 
@@ -47,7 +47,7 @@ export function DataExport() {
       </Section>
 
       <Section title="Contact">
-        <p>Pour toute question concernant l'export de vos données : <a href="mailto:support@mylifeboard.app" className="text-blue-600 hover:underline">support@mylifeboard.app</a></p>
+        <p>Pour toute question concernant l'export de vos données : <a href="mailto:support@mylifeboard.app" style={{ color: "var(--color-primary)" }} className="hover:underline">support@mylifeboard.app</a></p>
       </Section>
     </LegalLayout>
   )

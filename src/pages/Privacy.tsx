@@ -50,7 +50,7 @@ export function Privacy() {
           <li><strong>Droit à la portabilité</strong> : exporter vos données dans un format standard</li>
           <li><strong>Droit d'opposition</strong> : vous opposer à certains traitements</li>
         </ul>
-        <p className="mt-3">Pour exercer ces droits, contactez-nous à <a href="mailto:support@mylifeboard.app" className="text-blue-600 hover:underline">support@mylifeboard.app</a>.</p>
+        <p className="mt-3">Pour exercer ces droits, contactez-nous à <a href="mailto:support@mylifeboard.app" style={{ color: "var(--color-primary)" }} className="hover:underline">support@mylifeboard.app</a>.</p>
       </Section>
 
       <Section title="8. Conservation des données">
@@ -62,7 +62,7 @@ export function Privacy() {
       </Section>
 
       <Section title="10. Contact">
-        <p>Pour toute question relative à vos données personnelles : <a href="mailto:support@mylifeboard.app" className="text-blue-600 hover:underline">support@mylifeboard.app</a></p>
+        <p>Pour toute question relative à vos données personnelles : <a href="mailto:support@mylifeboard.app" style={{ color: "var(--color-primary)" }} className="hover:underline">support@mylifeboard.app</a></p>
       </Section>
     </LegalLayout>
   )

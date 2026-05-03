@@ -8,7 +8,7 @@ export function Refund() {
       </Section>
 
       <Section title="2. Abonnements mensuels et annuels">
-        <p>Si vous souscrivez à un abonnement payant (mensuel ou annuel), vous bénéficiez d'une <strong>garantie satisfait ou remboursé de 14 jours</strong> à compter de la date du premier paiement. Si vous n'êtes pas satisfait, contactez-nous à <a href="mailto:support@mylifeboard.app" className="text-blue-600 hover:underline">support@mylifeboard.app</a> dans ce délai et nous vous rembourserons intégralement, sans question.</p>
+        <p>Si vous souscrivez à un abonnement payant (mensuel ou annuel), vous bénéficiez d'une <strong>garantie satisfait ou remboursé de 14 jours</strong> à compter de la date du premier paiement. Si vous n'êtes pas satisfait, contactez-nous à <a href="mailto:support@mylifeboard.app" style={{ color: "var(--color-primary)" }} className="hover:underline">support@mylifeboard.app</a> dans ce délai et nous vous rembourserons intégralement, sans question.</p>
         <p className="mt-3">Passé ce délai de 14 jours, les paiements sont non remboursables. Vous pouvez toutefois résilier votre abonnement à tout moment depuis les paramètres de votre compte — l'accès reste actif jusqu'à la fin de la période déjà payée.</p>
       </Section>
 
@@ -21,7 +21,7 @@ export function Refund() {
       </Section>
 
       <Section title="5. Procédure de remboursement">
-        <p>Pour demander un remboursement, envoyez un e-mail à <a href="mailto:support@mylifeboard.app" className="text-blue-600 hover:underline">support@mylifeboard.app</a> en précisant :</p>
+        <p>Pour demander un remboursement, envoyez un e-mail à <a href="mailto:support@mylifeboard.app" style={{ color: "var(--color-primary)" }} className="hover:underline">support@mylifeboard.app</a> en précisant :</p>
         <ul>
           <li>L'adresse e-mail associée à votre compte</li>
           <li>La date du paiement concerné</li>
@@ -35,7 +35,7 @@ export function Refund() {
       </Section>
 
       <Section title="7. Contact">
-        <p>Pour toute question relative à notre politique de remboursement, contactez-nous à : <a href="mailto:support@mylifeboard.app" className="text-blue-600 hover:underline">support@mylifeboard.app</a></p>
+        <p>Pour toute question relative à notre politique de remboursement, contactez-nous à : <a href="mailto:support@mylifeboard.app" style={{ color: "var(--color-primary)" }} className="hover:underline">support@mylifeboard.app</a></p>
       </Section>
     </LegalLayout>
   )

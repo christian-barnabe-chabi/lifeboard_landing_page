@@ -63,7 +63,7 @@ export function Terms() {
       </Section>
 
       <Section title="11. Contact">
-        <p>Pour toute question relative aux présentes conditions, contactez-nous à : <a href="mailto:support@mylifeboard.app" className="text-blue-600 hover:underline">support@mylifeboard.app</a></p>
+        <p>Pour toute question relative aux présentes conditions, contactez-nous à : <a href="mailto:support@mylifeboard.app" style={{ color: "var(--color-primary)" }} className="hover:underline">support@mylifeboard.app</a></p>
       </Section>
     </LegalLayout>
   )
