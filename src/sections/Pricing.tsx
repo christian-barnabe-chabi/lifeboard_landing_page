@@ -23,7 +23,7 @@ const plans = [
     name: 'Pro Annuel',
     amount: '$35.99',
     period: 'par an',
-    badge: 'Économisez 17%',
+    badge: 'Populaire',
     description: 'Le meilleur rapport qualité-prix.',
     features: ['Tout du plan mensuel', 'Économisez $7.09 par an', 'Support prioritaire'],
     cta: 'Choisir Annuel',
@@ -33,7 +33,7 @@ const plans = [
     name: 'Lifetime',
     amount: '$200',
     period: 'une seule fois',
-    badge: 'Meilleure offre',
+    badge: 'Accès à vie',
     description: 'Payez une fois, accédez à vie.',
     features: ['Accès illimité à vie', 'Toutes les futures fonctionnalités', 'Support prioritaire à vie'],
     cta: 'Obtenir l\'accès à vie',
@@ -46,7 +46,7 @@ export function Pricing() {
     <section id="pricing" className="py-32 px-8 border-t border-gray-100">
       <div className="max-w-5xl mx-auto">
         <div className="mb-20">
-          <p className="text-sm font-medium text-gray-400 tracking-widest uppercase mb-4">Tarifs</p>
+          <p className="text-sm font-medium text-[var(--color-primary)] tracking-widest uppercase mb-4">Tarifs</p>
           <h2 className="text-4xl md:text-5xl font-bold tracking-tight leading-tight">
             Simple et transparent.
           </h2>
@@ -58,7 +58,7 @@ export function Pricing() {
               key={plan.name}
               className={`rounded-2xl p-7 flex flex-col ${
                 plan.highlight
-                  ? 'bg-indigo-600 text-white'
+                  ? 'bg-[var(--color-primary)] text-white'
                   : 'border border-gray-200 bg-white'
               }`}
             >
@@ -85,7 +85,7 @@ export function Pricing() {
 
                 <ul className="space-y-2">
                   {plan.features.map(f => (
-                    <li key={f} className={`text-sm flex items-start gap-2 ${plan.highlight ? 'text-indigo-100' : 'text-gray-500'}`}>
+                    <li key={f} className={`text-sm flex items-start gap-2 ${plan.highlight ? 'text-white/80' : 'text-gray-500'}`}>
                       <span className="mt-0.5 shrink-0 text-gray-400">—</span>
                       {f}
                     </li>
@@ -97,7 +97,7 @@ export function Pricing() {
                 href={APP_URL}
                 className={`block text-center text-sm font-semibold py-3 rounded-xl transition-colors ${
                   plan.highlight
-                    ? 'bg-white text-indigo-600 hover:bg-indigo-50'
+                    ? 'bg-white text-[var(--color-primary)] hover:bg-[var(--color-primary-light)]'
                     : 'border border-gray-200 text-black hover:bg-gray-50'
                 }`}
               >

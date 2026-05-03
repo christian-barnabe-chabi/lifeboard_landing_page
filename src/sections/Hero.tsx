@@ -12,14 +12,14 @@ export function Hero() {
     <div className="min-h-screen flex flex-col">
       {/* Nav */}
       <nav className="flex items-center justify-between px-8 py-6 border-b border-gray-100">
-        <span className="text-base font-semibold tracking-tight">LifeBoard</span>
+        <span className="text-base font-semibold tracking-tight text-[var(--color-primary)]">LifeBoard</span>
         <div className="hidden md:flex items-center gap-8 text-sm text-gray-500">
-          <button onClick={() => scrollTo('features')} className="hover:text-black transition-colors cursor-pointer bg-transparent border-none p-0">Fonctionnalités</button>
-          <button onClick={() => scrollTo('pricing')} className="hover:text-black transition-colors cursor-pointer bg-transparent border-none p-0">Tarifs</button>
+          <button onClick={() => scrollTo('features')} className="hover:text-[var(--color-primary)] transition-colors cursor-pointer bg-transparent border-none p-0">Fonctionnalités</button>
+          <button onClick={() => scrollTo('pricing')} className="hover:text-[var(--color-primary)] transition-colors cursor-pointer bg-transparent border-none p-0">Tarifs</button>
         </div>
         <a
           href={APP_URL}
-          className="text-sm font-medium bg-black text-white px-4 py-2 rounded-lg hover:bg-gray-800 transition-colors"
+          className="text-sm font-medium bg-[var(--color-primary)] text-white px-4 py-2 rounded-lg hover:opacity-90 transition-opacity"
         >
           Commencer
         </a>
@@ -27,7 +27,7 @@ export function Hero() {
 
       {/* Hero */}
       <main className="flex-1 flex flex-col items-center justify-center text-center px-6 py-24 max-w-4xl mx-auto w-full">
-        <p className="text-sm font-medium text-gray-400 tracking-widest uppercase mb-8">
+        <p className="text-sm font-medium text-[var(--color-primary)] tracking-widest uppercase mb-8">
           Tableau de bord de vie personnel
         </p>
         <h1 className="text-6xl md:text-8xl font-bold tracking-tight leading-none text-black mb-8">
@@ -40,14 +40,14 @@ export function Hero() {
         <div className="flex flex-col sm:flex-row items-center gap-4">
           <a
             href={APP_URL}
-            className="bg-black text-white font-medium px-8 py-4 rounded-xl text-base hover:bg-gray-800 transition-colors"
+            className="bg-[var(--color-primary)] text-white font-medium px-8 py-4 rounded-xl text-base hover:opacity-90 transition-opacity"
           >
             Essayer gratuitement — 7 jours
           </a>
-          <a href={APP_STORE_URL} className="text-base font-medium border border-gray-200 px-8 py-4 rounded-xl hover:border-gray-400 hover:text-black text-gray-500 transition-colors">
+          <a href={APP_STORE_URL} className="text-base font-medium border border-gray-200 px-8 py-4 rounded-xl hover:border-[var(--color-primary)] hover:text-[var(--color-primary)] text-gray-500 transition-colors">
             iOS
           </a>
-          <a href={PLAY_STORE_URL} className="text-base font-medium border border-gray-200 px-8 py-4 rounded-xl hover:border-gray-400 hover:text-black text-gray-500 transition-colors">
+          <a href={PLAY_STORE_URL} className="text-base font-medium border border-gray-200 px-8 py-4 rounded-xl hover:border-[var(--color-primary)] hover:text-[var(--color-primary)] text-gray-500 transition-colors">
             Android
           </a>
         </div>

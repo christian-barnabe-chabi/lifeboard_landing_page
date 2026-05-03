@@ -21,7 +21,7 @@ export function HowItWorks() {
     <section id="how" className="py-32 px-8 border-t border-gray-100 bg-gray-50">
       <div className="max-w-5xl mx-auto">
         <div className="mb-20">
-          <p className="text-sm font-medium text-gray-400 tracking-widest uppercase mb-4">Comment ça marche</p>
+          <p className="text-sm font-medium text-[var(--color-primary)] tracking-widest uppercase mb-4">Comment ça marche</p>
           <h2 className="text-4xl md:text-5xl font-bold tracking-tight leading-tight">
             Opérationnel en quelques minutes.
           </h2>
@@ -30,7 +30,7 @@ export function HowItWorks() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-16">
           {steps.map(s => (
             <div key={s.n}>
-              <p className="text-5xl font-bold text-gray-100 mb-6 tabular-nums">{s.n}</p>
+              <p className="text-5xl font-bold text-[var(--color-primary)]/20 mb-6 tabular-nums">{s.n}</p>
               <h3 className="text-lg font-semibold text-black mb-3">{s.title}</h3>
               <p className="text-sm text-gray-500 leading-relaxed">{s.description}</p>
             </div>
