@@ -31,7 +31,7 @@ const plans = [
   },
   {
     name: 'Lifetime',
-    amount: '$89',
+    amount: '$200',
     period: 'une seule fois',
     badge: 'Meilleure offre',
     description: 'Payez une fois, accédez à vie.',
