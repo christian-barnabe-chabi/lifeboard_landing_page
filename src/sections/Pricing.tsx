@@ -58,8 +58,8 @@ export function Pricing() {
               key={plan.name}
               className={`rounded-2xl p-7 flex flex-col ${
                 plan.highlight
-                  ? 'bg-gray-900 text-white border border-gray-700'
-                  : 'border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900'
+                  ? 'bg-indigo-600 text-white'
+                  : 'border border-gray-200 bg-white'
               }`}
             >
               <div className="mb-8 flex-1">
@@ -68,14 +68,14 @@ export function Pricing() {
                     {plan.name}
                   </span>
                   {plan.badge && (
-                    <span className={`text-xs font-semibold px-2 py-0.5 rounded-full ${plan.highlight ? 'bg-white/10 text-white' : 'bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300'}`}>
+                    <span className={`text-xs font-semibold px-2 py-0.5 rounded-full ${plan.highlight ? 'bg-white/20 text-white' : 'bg-gray-100 text-gray-600'}`}>
                       {plan.badge}
                     </span>
                   )}
                 </div>
 
                 <div className="mb-1">
-                  <span className={`text-4xl font-bold tabular-nums ${plan.highlight ? 'text-white' : 'text-black dark:text-white'}`}>
+                  <span className={`text-4xl font-bold tabular-nums ${plan.highlight ? 'text-white' : 'text-black'}`}>
                     {plan.amount}
                   </span>
                 </div>
@@ -85,7 +85,7 @@ export function Pricing() {
 
                 <ul className="space-y-2">
                   {plan.features.map(f => (
-                    <li key={f} className={`text-sm flex items-start gap-2 ${plan.highlight ? 'text-gray-300' : 'text-gray-500 dark:text-gray-400'}`}>
+                    <li key={f} className={`text-sm flex items-start gap-2 ${plan.highlight ? 'text-indigo-100' : 'text-gray-500'}`}>
                       <span className="mt-0.5 shrink-0 text-gray-400">—</span>
                       {f}
                     </li>
@@ -97,8 +97,8 @@ export function Pricing() {
                 href={APP_URL}
                 className={`block text-center text-sm font-semibold py-3 rounded-xl transition-colors ${
                   plan.highlight
-                    ? 'bg-white text-black hover:bg-gray-100'
-                    : 'border border-gray-200 dark:border-gray-600 text-black dark:text-white hover:bg-gray-50 dark:hover:bg-gray-800'
+                    ? 'bg-white text-indigo-600 hover:bg-indigo-50'
+                    : 'border border-gray-200 text-black hover:bg-gray-50'
                 }`}
               >
                 {plan.cta}
