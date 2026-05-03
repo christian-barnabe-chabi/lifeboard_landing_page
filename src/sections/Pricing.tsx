@@ -58,35 +58,35 @@ export function Pricing() {
               key={plan.name}
               className={`rounded-2xl p-7 flex flex-col ${
                 plan.highlight
-                  ? 'bg-black text-white'
-                  : 'border border-gray-200 bg-white'
+                  ? 'bg-gray-900 text-white border border-gray-700'
+                  : 'border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900'
               }`}
             >
               <div className="mb-8 flex-1">
                 <div className="flex items-start justify-between mb-6">
-                  <span className={`text-xs font-semibold uppercase tracking-wider ${plan.highlight ? 'text-gray-400' : 'text-gray-400'}`}>
+                  <span className="text-xs font-semibold uppercase tracking-wider text-gray-400">
                     {plan.name}
                   </span>
                   {plan.badge && (
-                    <span className={`text-xs font-semibold px-2 py-0.5 rounded-full ${plan.highlight ? 'bg-white/10 text-white' : 'bg-gray-100 text-gray-600'}`}>
+                    <span className={`text-xs font-semibold px-2 py-0.5 rounded-full ${plan.highlight ? 'bg-white/10 text-white' : 'bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300'}`}>
                       {plan.badge}
                     </span>
                   )}
                 </div>
 
                 <div className="mb-1">
-                  <span className={`text-4xl font-bold tabular-nums ${plan.highlight ? 'text-white' : 'text-black'}`}>
+                  <span className={`text-4xl font-bold tabular-nums ${plan.highlight ? 'text-white' : 'text-black dark:text-white'}`}>
                     {plan.amount}
                   </span>
                 </div>
-                <p className={`text-xs mb-6 ${plan.highlight ? 'text-gray-400' : 'text-gray-400'}`}>
+                <p className="text-xs mb-6 text-gray-400">
                   {plan.period}
                 </p>
 
                 <ul className="space-y-2">
                   {plan.features.map(f => (
-                    <li key={f} className={`text-sm flex items-start gap-2 ${plan.highlight ? 'text-gray-300' : 'text-gray-500'}`}>
-                      <span className={`mt-0.5 shrink-0 ${plan.highlight ? 'text-gray-400' : 'text-gray-300'}`}>—</span>
+                    <li key={f} className={`text-sm flex items-start gap-2 ${plan.highlight ? 'text-gray-300' : 'text-gray-500 dark:text-gray-400'}`}>
+                      <span className="mt-0.5 shrink-0 text-gray-400">—</span>
                       {f}
                     </li>
                   ))}
@@ -98,7 +98,7 @@ export function Pricing() {
                 className={`block text-center text-sm font-semibold py-3 rounded-xl transition-colors ${
                   plan.highlight
                     ? 'bg-white text-black hover:bg-gray-100'
-                    : 'border border-gray-200 text-black hover:bg-gray-50'
+                    : 'border border-gray-200 dark:border-gray-600 text-black dark:text-white hover:bg-gray-50 dark:hover:bg-gray-800'
                 }`}
               >
                 {plan.cta}
