@@ -2,8 +2,6 @@
 import { useScrollParallax } from '../hooks/useParallax'
 
 const APP_URL = 'https://app.mylifeboard.app'
-const APP_STORE_URL = '#'
-const PLAY_STORE_URL = '#'
 
 function scrollTo(id: string) {
   document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
