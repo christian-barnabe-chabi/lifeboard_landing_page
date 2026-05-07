@@ -2,13 +2,13 @@ import { LegalLayout } from './LegalLayout'
 
 export function Refund() {
   return (
-    <LegalLayout title="Politique de remboursement" lastUpdated="23 avril 2026">
+    <LegalLayout title="Politique de remboursement" lastUpdated="6 mai 2026">
       <Section title="1. Période d'essai gratuite">
         <p>LifeBoard propose une période d'essai gratuite de 7 jours, sans carte bancaire requise. Vous pouvez explorer toutes les fonctionnalités de l'application sans aucun engagement. Aucun remboursement n'est applicable durant cette période puisqu'aucun paiement n'est prélevé.</p>
       </Section>
 
       <Section title="2. Abonnements mensuels et annuels">
-        <p>Si vous souscrivez à un abonnement payant (mensuel ou annuel), vous bénéficiez d'une <strong>garantie satisfait ou remboursé de 14 jours</strong> à compter de la date du premier paiement. Si vous n'êtes pas satisfait, contactez-nous à <a href="mailto:support@mylifeboard.app" style={{ color: "var(--color-primary)" }} className="hover:underline">support@mylifeboard.app</a> dans ce délai et nous vous rembourserons intégralement, sans question.</p>
+        <p>Si vous souscrivez à un abonnement payant (mensuel ou annuel), vous bénéficiez d'une <strong>garantie satisfait ou remboursé de 14 jours</strong> à compter de la date du premier paiement. Si vous n'êtes pas satisfait, contactez-nous à <a href="mailto:support@omnia-nest.com" style={{ color: "var(--color-primary)" }} className="hover:underline">support@omnia-nest.com</a> dans ce délai et nous vous rembourserons intégralement, sans question.</p>
         <p className="mt-3">Passé ce délai de 14 jours, les paiements sont non remboursables. Vous pouvez toutefois résilier votre abonnement à tout moment depuis les paramètres de votre compte — l'accès reste actif jusqu'à la fin de la période déjà payée.</p>
       </Section>
 
@@ -21,7 +21,7 @@ export function Refund() {
       </Section>
 
       <Section title="5. Procédure de remboursement">
-        <p>Pour demander un remboursement, envoyez un e-mail à <a href="mailto:support@mylifeboard.app" style={{ color: "var(--color-primary)" }} className="hover:underline">support@mylifeboard.app</a> en précisant :</p>
+        <p>Pour demander un remboursement, envoyez un e-mail à <a href="mailto:support@omnia-nest.com" style={{ color: "var(--color-primary)" }} className="hover:underline">support@omnia-nest.com</a> en précisant :</p>
         <ul>
           <li>L'adresse e-mail associée à votre compte</li>
           <li>La date du paiement concerné</li>
@@ -35,7 +35,7 @@ export function Refund() {
       </Section>
 
       <Section title="7. Contact">
-        <p>Pour toute question relative à notre politique de remboursement, contactez-nous à : <a href="mailto:support@mylifeboard.app" style={{ color: "var(--color-primary)" }} className="hover:underline">support@mylifeboard.app</a></p>
+        <p>Pour toute question relative à notre politique de remboursement, contactez OMNIA NEST SARL à : <a href="mailto:support@omnia-nest.com" style={{ color: "var(--color-primary)" }} className="hover:underline">support@omnia-nest.com</a></p>
       </Section>
     </LegalLayout>
   )
