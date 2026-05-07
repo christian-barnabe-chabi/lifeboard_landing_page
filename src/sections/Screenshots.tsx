@@ -5,26 +5,26 @@ const SHOTS = [
   {
     label: 'Tableau de bord',
     description: 'Vue d\'ensemble de vos finances, habitudes et priorités du jour.',
-    light: '/images/home_light.png',
-    dark: '/images/home_dark.png',
+    light: 'https://storage-cf-r2.mylifeboard.app/landing_page/public/home_light.png',
+    dark: 'https://storage-cf-r2.mylifeboard.app/landing_page/public/home_dark.png',
   },
   {
     label: 'Finance',
     description: 'Revenus, dépenses et patrimoine net centralisés en un coup d\'œil.',
-    light: '/images/finance-dash_light.png',
-    dark: '/images/finance-dash_dark.png',
+    light: 'https://storage-cf-r2.mylifeboard.app/landing_page/public/finance-dash_light.png',
+    dark: 'https://storage-cf-r2.mylifeboard.app/landing_page/public/finance-dash_dark.png',
   },
   {
     label: 'Habitudes',
     description: 'Suivez vos routines quotidiennes et visualisez vos séquences.',
-    light: '/images/habits_light.png',
-    dark: '/images/habits_dark.png',
+    light: 'https://storage-cf-r2.mylifeboard.app/landing_page/public/habits_light.png',
+    dark: 'https://storage-cf-r2.mylifeboard.app/landing_page/public/habits_dark.png',
   },
   {
     label: 'Calendrier',
     description: 'Tâches, objectifs et habitudes réunis dans une seule vue.',
-    light: '/images/calendar_light.png',
-    dark: '/images/calendar_dark.png',
+    light: 'https://storage-cf-r2.mylifeboard.app/landing_page/public/calendar_light.png',
+    dark: 'https://storage-cf-r2.mylifeboard.app/landing_page/public/calendar_dark.png',
   },
 ]
 
