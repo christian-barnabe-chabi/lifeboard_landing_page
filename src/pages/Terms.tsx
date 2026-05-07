@@ -68,7 +68,7 @@ export function Terms() {
       </Section>
 
       <Section title="8. Propriété intellectuelle">
-        <p>LifeBoard et l'ensemble de ses éléments constitutifs — interface utilisateur, code source, design, marques, logos, textes et données — sont la propriété exclusive d'OMNIA NEST SARL ou de ses concédants de licence, et sont protégés par les lois sénégalaises et les conventions internationales relatives à la propriété intellectuelle.</p>
+        <p>LifeBoard et l'ensemble de ses éléments constitutifs (interface utilisateur, code source, design, marques, logos, textes et données) sont la propriété exclusive d'OMNIA NEST SARL ou de ses concédants de licence, et sont protégés par les lois sénégalaises et les conventions internationales relatives à la propriété intellectuelle.</p>
         <p className="mt-3">Aucun droit de propriété intellectuelle n'est cédé à l'utilisateur au titre des présentes conditions. Toute reproduction, représentation, adaptation, modification ou utilisation de tout ou partie de ces éléments, sans l'autorisation écrite préalable d'OMNIA NEST SARL, est strictement interdite et constitue une contrefaçon.</p>
         <p className="mt-3">Les contenus que vous saisissez dans LifeBoard (données financières, journaux, habitudes, etc.) restent votre propriété. Vous accordez à OMNIA NEST SARL une licence limitée, non-exclusive et révocable, aux seules fins d'exécuter le service.</p>
       </Section>

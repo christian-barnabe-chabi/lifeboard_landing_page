@@ -9,7 +9,7 @@ export function Refund() {
 
       <Section title="2. Abonnements mensuels et annuels">
         <p>Si vous souscrivez à un abonnement payant (mensuel ou annuel), vous bénéficiez d'une <strong>garantie satisfait ou remboursé de 14 jours</strong> à compter de la date du premier paiement. Si vous n'êtes pas satisfait, contactez-nous à <a href="mailto:support@omnia-nest.com" style={{ color: "var(--color-primary)" }} className="hover:underline">support@omnia-nest.com</a> dans ce délai et nous vous rembourserons intégralement, sans question.</p>
-        <p className="mt-3">Passé ce délai de 14 jours, les paiements sont non remboursables. Vous pouvez toutefois résilier votre abonnement à tout moment depuis les paramètres de votre compte — l'accès reste actif jusqu'à la fin de la période déjà payée.</p>
+        <p className="mt-3">Passé ce délai de 14 jours, les paiements sont non remboursables. Vous pouvez toutefois résilier votre abonnement à tout moment depuis les paramètres de votre compte ; l'accès reste actif jusqu'à la fin de la période déjà payée.</p>
       </Section>
 
       <Section title="3. Accès Lifetime (paiement unique)">

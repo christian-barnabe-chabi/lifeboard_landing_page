@@ -1,4 +1,6 @@
 
+import { useScrollParallax } from '../hooks/useParallax'
+
 const APP_URL = 'https://app.mylifeboard.app'
 const APP_STORE_URL = '#'
 const PLAY_STORE_URL = '#'
@@ -8,8 +10,10 @@ function scrollTo(id: string) {
 }
 
 export function Hero() {
+  const parallaxY = useScrollParallax(0.3)
+
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col overflow-hidden">
       {/* Nav */}
       <nav className="flex items-center justify-between px-8 py-6 border-b border-gray-100">
         <span className="text-base font-semibold tracking-tight text-[var(--color-primary)]">LifeBoard</span>
@@ -26,7 +30,10 @@ export function Hero() {
       </nav>
 
       {/* Hero */}
-      <main className="flex-1 flex flex-col items-center justify-center text-center px-6 py-24 max-w-4xl mx-auto w-full">
+      <main
+        className="flex-1 flex flex-col items-center justify-center text-center px-6 py-24 max-w-4xl mx-auto w-full"
+        style={{ transform: `translateY(${parallaxY}px)`, willChange: 'transform' }}
+      >
         <p className="text-sm font-medium text-[var(--color-primary)] tracking-widest uppercase mb-8">
           Tableau de bord de vie personnel
         </p>
@@ -42,14 +49,14 @@ export function Hero() {
             href={APP_URL}
             className="bg-[var(--color-primary)] text-white font-medium px-8 py-4 rounded-xl text-base hover:opacity-90 transition-opacity"
           >
-            Essayer gratuitement — 7 jours
+            Essayer gratuitement · 7 jours
           </a>
-          <a href={APP_STORE_URL} className="text-base font-medium border border-gray-200 px-8 py-4 rounded-xl hover:border-[var(--color-primary)] hover:text-[var(--color-primary)] text-gray-500 transition-colors">
-            iOS
-          </a>
-          <a href={PLAY_STORE_URL} className="text-base font-medium border border-gray-200 px-8 py-4 rounded-xl hover:border-[var(--color-primary)] hover:text-[var(--color-primary)] text-gray-500 transition-colors">
-            Android
-          </a>
+          <span className="text-base font-medium border border-dashed border-gray-200 px-8 py-4 rounded-xl text-gray-400 cursor-default select-none">
+            iOS (bientôt)
+          </span>
+          <span className="text-base font-medium border border-dashed border-gray-200 px-8 py-4 rounded-xl text-gray-400 cursor-default select-none">
+            Android (bientôt)
+          </span>
         </div>
 
         <p className="mt-8 text-sm text-gray-400">

@@ -15,7 +15,7 @@ function Home() {
     <div className="min-h-screen bg-white text-gray-900 antialiased">
       <Hero />
       <Features />
-      <HowItWorks />
+<HowItWorks />
       <Pricing />
       <Footer />
     </div>
