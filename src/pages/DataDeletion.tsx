@@ -22,7 +22,7 @@ export function DataDeletion() {
       </Section>
 
       <Section title="Comment supprimer votre compte">
-        <p><strong>Option 1 — Depuis l'application :</strong></p>
+        <p><strong>Option 1 : depuis l'application</strong></p>
         <ol>
           <li>Ouvrez LifeBoard (web ou mobile)</li>
           <li>Accédez aux <strong>Paramètres</strong></li>
@@ -30,7 +30,7 @@ export function DataDeletion() {
           <li>Appuyez sur <strong>"Supprimer mon compte"</strong></li>
           <li>Confirmez votre mot de passe et validez</li>
         </ol>
-        <p className="mt-4"><strong>Option 2 — Par e-mail :</strong></p>
+        <p className="mt-4"><strong>Option 2 : par e-mail</strong></p>
         <p>Envoyez une demande de suppression à <a href="mailto:support@mylifeboard.app?subject=Demande de suppression de compte" style={{ color: "var(--color-primary)" }} className="hover:underline">support@mylifeboard.app</a> depuis l'adresse e-mail associée à votre compte.</p>
         <p className="mt-2">Objet suggéré : <em>"Demande de suppression de compte"</em></p>
       </Section>

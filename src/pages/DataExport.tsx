@@ -25,7 +25,7 @@ export function DataExport() {
       </Section>
 
       <Section title="Comment exporter vos données">
-        <p><strong>Option 1 — Depuis l'application :</strong></p>
+        <p><strong>Option 1 : depuis l'application</strong></p>
         <ol>
           <li>Ouvrez LifeBoard (web ou mobile)</li>
           <li>Accédez aux <strong>Paramètres</strong></li>
@@ -33,7 +33,7 @@ export function DataExport() {
           <li>Appuyez sur <strong>"Exporter mes données"</strong></li>
           <li>Un fichier JSON sera téléchargé ou envoyé par e-mail</li>
         </ol>
-        <p className="mt-4"><strong>Option 2 — Par e-mail :</strong></p>
+        <p className="mt-4"><strong>Option 2 : par e-mail</strong></p>
         <p>Envoyez une demande à <a href="mailto:support@mylifeboard.app?subject=Demande d'export de données" style={{ color: "var(--color-primary)" }} className="hover:underline">support@mylifeboard.app</a> depuis l'adresse e-mail associée à votre compte.</p>
         <p className="mt-2">Objet suggéré : <em>"Demande d'export de données"</em></p>
       </Section>

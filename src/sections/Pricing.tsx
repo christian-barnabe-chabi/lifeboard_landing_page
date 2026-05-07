@@ -6,7 +6,7 @@ const plans = [
     amount: 'Gratuit',
     period: '7 jours',
     description: 'Accès complet, aucune carte requise.',
-    features: ['Tous les modules inclus', 'Web + Mobile', 'Données sécurisées'],
+    features: ['Tous les modules inclus', 'Web (mobile bientôt)', 'Données sécurisées'],
     cta: 'Démarrer l\'essai',
     highlight: false,
   },
@@ -15,7 +15,7 @@ const plans = [
     amount: '$4.99',
     period: 'par mois',
     description: 'Pour ceux qui veulent rester flexibles.',
-    features: ['Accès illimité à tous les modules', 'Web + Mobile synchronisés', 'Support prioritaire'],
+    features: ['Accès illimité à tous les modules', 'Web + Mobile (bientôt)', 'Support prioritaire'],
     cta: 'Choisir Mensuel',
     highlight: false,
   },
@@ -86,7 +86,7 @@ export function Pricing() {
                 <ul className="space-y-2">
                   {plan.features.map(f => (
                     <li key={f} className={`text-sm flex items-start gap-2 ${plan.highlight ? 'text-white/80' : 'text-gray-500'}`}>
-                      <span className="mt-0.5 shrink-0 text-gray-400">—</span>
+                      <span className="mt-0.5 shrink-0 text-gray-400">·</span>
                       {f}
                     </li>
                   ))}

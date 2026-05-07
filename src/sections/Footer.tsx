@@ -28,7 +28,7 @@ export function Footer() {
       </div>
 
       <div className="max-w-5xl mx-auto mt-10 pt-6 border-t border-gray-100">
-        <p className="text-xs text-gray-300">© {new Date().getFullYear()} LifeBoard. Tous droits réservés.</p>
+        <p className="text-xs text-gray-300">© {new Date().getFullYear()} LifeBoard · By OMNIA NEST SARL. Tous droits réservés.</p>
       </div>
     </footer>
   )

@@ -12,7 +12,7 @@ export function Privacy() {
 
       <Section title="2. Données collectées">
         <p><strong>Données d'identification et de compte :</strong> prénom, nom, adresse e-mail et mot de passe (haché et jamais stocké en clair) lors de l'inscription.</p>
-        <p className="mt-3"><strong>Données de contenu personnel :</strong> toutes les informations que vous saisissez librement dans l'application — transactions financières, habitudes, objectifs, entrées de journal personnel, tâches, priorités du jour, données de santé (poids, sommeil, hydratation, activité), vision personnelle. Ces données sont strictement personnelles, liées à votre compte, et ne sont jamais consultées, partagées ou vendues à des tiers.</p>
+        <p className="mt-3"><strong>Données de contenu personnel :</strong> toutes les informations que vous saisissez librement dans l'application : transactions financières, habitudes, objectifs, entrées de journal personnel, tâches, priorités du jour, données de santé (poids, sommeil, hydratation, activité), vision personnelle. Ces données sont strictement personnelles, liées à votre compte, et ne sont jamais consultées, partagées ou vendues à des tiers.</p>
         <p className="mt-3"><strong>Données de facturation :</strong> en cas de souscription à un abonnement payant, les données de paiement sont traitées exclusivement par notre prestataire de paiement. OMNIA NEST SARL ne stocke aucun numéro de carte bancaire.</p>
         <p className="mt-3"><strong>Données techniques de navigation :</strong> adresse IP, type de navigateur ou d'appareil, système d'exploitation, journaux d'accès et d'erreurs. Ces données sont utilisées uniquement à des fins de sécurité, de débogage et d'amélioration du service.</p>
         <p className="mt-3"><strong>Communications :</strong> si vous nous contactez par e-mail, nous conservons la correspondance afin de traiter votre demande.</p>
@@ -47,7 +47,7 @@ export function Privacy() {
         <ul>
           <li>Chiffrement des communications via HTTPS/TLS</li>
           <li>Hachage sécurisé des mots de passe</li>
-          <li>Isolation stricte des données par utilisateur — aucun utilisateur ne peut accéder aux données d'un autre</li>
+          <li>Isolation stricte des données par utilisateur ; aucun utilisateur ne peut accéder aux données d'un autre</li>
           <li>Journalisation des accès et détection d'anomalies</li>
           <li>Sauvegardes régulières des données</li>
         </ul>
@@ -85,7 +85,7 @@ export function Privacy() {
           <li><strong>Droit d'opposition</strong> : vous opposer au traitement de vos données fondé sur l'intérêt légitime</li>
           <li><strong>Droit de retrait du consentement</strong> : retirer à tout moment un consentement préalablement accordé, sans porter atteinte à la licéité des traitements antérieurs</li>
         </ul>
-        <p className="mt-3">Pour exercer ces droits, contactez-nous à <a href="mailto:support@omnia-nest.com" style={{ color: "var(--color-primary)" }} className="hover:underline">support@omnia-nest.com</a>. Nous nous engageons à répondre dans un délai d'un mois. En cas de réponse insatisfaisante, vous disposez du droit d'introduire une réclamation auprès de la <strong>CNIL</strong> (Commission Nationale de l'Informatique et des Libertés — <a href="https://www.cnil.fr" target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-primary)" }} className="hover:underline">www.cnil.fr</a>).</p>
+        <p className="mt-3">Pour exercer ces droits, contactez-nous à <a href="mailto:support@omnia-nest.com" style={{ color: "var(--color-primary)" }} className="hover:underline">support@omnia-nest.com</a>. Nous nous engageons à répondre dans un délai d'un mois. En cas de réponse insatisfaisante, vous disposez du droit d'introduire une réclamation auprès de la <strong>CNIL</strong> (Commission Nationale de l'Informatique et des Libertés, <a href="https://www.cnil.fr" target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-primary)" }} className="hover:underline">www.cnil.fr</a>).</p>
       </Section>
 
       <Section title="10. Conservation des données">
