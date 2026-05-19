@@ -1,6 +1,5 @@
-import { useState, useEffect, useCallback } from 'react'
-import { createPortal } from 'react-dom'
-import { Sun, Moon, X, BookOpen, Kanban } from 'lucide-react'
+import { useState } from 'react'
+import { Sun, Moon, BookOpen, Kanban } from 'lucide-react'
 
 const MODULES = [
   {
@@ -70,75 +69,6 @@ const EXTRAS = [
   },
 ]
 
-interface LightboxProps {
-  light: string
-  dark: string
-  label: string
-  initialDark: boolean
-  onClose: () => void
-}
-
-function Lightbox({ light, dark, label, initialDark, onClose }: LightboxProps) {
-  const [isDark, setIsDark] = useState(initialDark)
-
-  const handleKey = useCallback((e: KeyboardEvent) => {
-    if (e.key === 'Escape') onClose()
-  }, [onClose])
-
-  useEffect(() => {
-    document.addEventListener('keydown', handleKey)
-    document.body.style.overflow = 'hidden'
-    return () => {
-      document.removeEventListener('keydown', handleKey)
-      document.body.style.overflow = ''
-    }
-  }, [handleKey])
-
-  return createPortal(
-    <div
-      className="fixed inset-0 z-50 flex items-center justify-center p-6 md:p-12"
-      style={{ background: 'rgba(0,0,0,0.8)', backdropFilter: 'blur(8px)' }}
-      onClick={onClose}
-    >
-      <div className="relative w-full max-w-5xl" onClick={e => e.stopPropagation()}>
-        <div className="relative rounded-2xl overflow-hidden">
-          <img
-            src={light}
-            alt={`${label} (mode clair)`}
-            className={`w-full h-auto block transition-opacity duration-300 ${isDark ? 'opacity-0 absolute inset-0' : 'opacity-100'}`}
-          />
-          <img
-            src={dark}
-            alt={`${label} (mode sombre)`}
-            className={`w-full h-auto block transition-opacity duration-300 ${isDark ? 'opacity-100' : 'opacity-0 absolute inset-0'}`}
-          />
-        </div>
-
-        <button
-          className="absolute top-3 right-14 flex items-center gap-1.5 px-2.5 py-1.5 rounded-full text-xs font-medium cursor-pointer select-none transition-all duration-200"
-          style={{
-            background: isDark ? '#1e1e2e' : '#ffffff',
-            color: isDark ? '#e2e8f0' : '#374151',
-            border: isDark ? '1px solid #3a3a5c' : '1px solid #e5e7eb',
-          }}
-          onClick={() => setIsDark(v => !v)}
-        >
-          {isDark ? <Moon size={11} /> : <Sun size={11} />}
-          {isDark ? 'Sombre' : 'Clair'}
-        </button>
-
-        <button
-          onClick={onClose}
-          className="absolute top-3 right-3 w-7 h-7 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 text-white transition-colors"
-          aria-label="Fermer"
-        >
-          <X size={14} />
-        </button>
-      </div>
-    </div>,
-    document.body,
-  )
-}
 
 function TextContent({ tag, title, description, benefits, isDark }: {
   tag: string; title: string; description: string; benefits: string[]; isDark: boolean
@@ -179,7 +109,6 @@ interface ModuleProps {
 
 function FeatureSection({ tag, title, description, benefits, light, dark, textRight, initialDark }: ModuleProps) {
   const [isDark, setIsDark] = useState(initialDark)
-  const [open, setOpen] = useState(false)
 
   return (
     <>
@@ -277,23 +206,9 @@ function FeatureSection({ tag, title, description, benefits, light, dark, textRi
             {isDark ? <Moon size={11} /> : <Sun size={11} />}
             {isDark ? 'Sombre' : 'Clair'}
           </button>
-          <button
-            onClick={() => setOpen(true)}
-            className="px-2.5 py-1.5 rounded-full text-xs font-medium cursor-zoom-in transition-all duration-200"
-            style={{
-              background: isDark ? '#1e1e2e' : '#ffffffee',
-              color: isDark ? '#e2e8f0' : '#374151',
-              border: isDark ? '1px solid #3a3a5c' : '1px solid #e5e7eb',
-            }}
-          >
-            Agrandir
-          </button>
         </div>
       </div>
 
-      {open && (
-        <Lightbox light={light} dark={dark} label={tag} initialDark={isDark} onClose={() => setOpen(false)} />
-      )}
     </>
   )
 }
