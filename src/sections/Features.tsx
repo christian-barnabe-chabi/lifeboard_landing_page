@@ -11,8 +11,8 @@ const MODULES = [
       'Priorités du jour en 3 points pour rester focalisé',
       'Progression de vos habitudes et objectifs actifs',
     ],
-    light: 'https://storage-cf-r2.mylifeboard.app/landing_page/public/home_light.png',
-    dark: 'https://storage-cf-r2.mylifeboard.app/landing_page/public/home_dark.png',
+    light: 'https://storage-cf-r2-public.mylifeboard.app/landing_page/public/home_light.png',
+    dark: 'https://storage-cf-r2-public.mylifeboard.app/landing_page/public/home_dark.png',
     textRight: false,
   },
   {
@@ -24,8 +24,8 @@ const MODULES = [
       'Patrimoine net calculé automatiquement',
       'Budget mensuel par catégorie avec alertes de dépassement',
     ],
-    light: 'https://storage-cf-r2.mylifeboard.app/landing_page/public/finance-dash_light.png',
-    dark: 'https://storage-cf-r2.mylifeboard.app/landing_page/public/finance-dash_dark.png',
+    light: 'https://storage-cf-r2-public.mylifeboard.app/landing_page/public/finance-dash_light.png',
+    dark: 'https://storage-cf-r2-public.mylifeboard.app/landing_page/public/finance-dash_dark.png',
     textRight: true,
   },
   {
@@ -37,8 +37,8 @@ const MODULES = [
       'Objectifs avec jalons et progression en pourcentage',
       'Rappels par e-mail configurables pour chaque habitude',
     ],
-    light: 'https://storage-cf-r2.mylifeboard.app/landing_page/public/habits_light.png',
-    dark: 'https://storage-cf-r2.mylifeboard.app/landing_page/public/habits_dark.png',
+    light: 'https://storage-cf-r2-public.mylifeboard.app/landing_page/public/habits_light.png',
+    dark: 'https://storage-cf-r2-public.mylifeboard.app/landing_page/public/habits_dark.png',
     textRight: false,
   },
   {
@@ -50,8 +50,8 @@ const MODULES = [
       'Kanban flexible pour gérer projets et tâches',
       'Revues hebdomadaires intégrées pour faire le bilan',
     ],
-    light: 'https://storage-cf-r2.mylifeboard.app/landing_page/public/calendar_light.png',
-    dark: 'https://storage-cf-r2.mylifeboard.app/landing_page/public/calendar_dark.png',
+    light: 'https://storage-cf-r2-public.mylifeboard.app/landing_page/public/calendar_light.png',
+    dark: 'https://storage-cf-r2-public.mylifeboard.app/landing_page/public/calendar_dark.png',
     textRight: true,
   },
 ]
