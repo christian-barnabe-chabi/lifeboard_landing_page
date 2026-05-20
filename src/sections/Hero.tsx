@@ -1,5 +1,4 @@
 
-import { useScrollParallax } from '../hooks/useParallax'
 import { Features } from '../config/features'
 
 const APP_URL = 'https://app.mylifeboard.app'
@@ -9,8 +8,6 @@ function scrollTo(id: string) {
 }
 
 export function Hero() {
-  const parallaxY = useScrollParallax(0.3)
-
   return (
     <div className="min-h-screen flex flex-col overflow-hidden">
       {/* Nav */}
@@ -31,7 +28,6 @@ export function Hero() {
       {/* Hero */}
       <main
         className="flex-1 flex flex-col items-center justify-center text-center px-6 py-24 max-w-4xl mx-auto w-full"
-        style={{ transform: `translateY(${parallaxY}px)`, willChange: 'transform' }}
       >
         <p className="text-sm font-medium text-[var(--color-primary)] tracking-widest uppercase mb-8">
           Tableau de bord de vie personnel
