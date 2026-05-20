@@ -1,3 +1,5 @@
+import { Features } from '../config/features'
+
 const APP_URL = 'https://app.mylifeboard.app'
 
 const plans = [
@@ -6,7 +8,7 @@ const plans = [
     amount: 'Gratuit',
     period: '7 jours',
     description: 'Accès complet, aucune carte requise.',
-    features: ['Tous les modules inclus', 'Web (mobile bientôt)', 'Données sécurisées'],
+    features: ['Tous les modules inclus', Features.SHOW_MOBILE_APP ? 'Web + Mobile (bientôt)' : 'Web', 'Données sécurisées'],
     cta: 'Démarrer l\'essai',
     highlight: false,
   },
@@ -15,7 +17,7 @@ const plans = [
     amount: '$4.99',
     period: 'par mois',
     description: 'Pour ceux qui veulent rester flexibles.',
-    features: ['Accès illimité à tous les modules', 'Web + Mobile (bientôt)', 'Support prioritaire'],
+    features: ['Accès illimité à tous les modules', Features.SHOW_MOBILE_APP ? 'Web + Mobile (bientôt)' : 'Web', 'Support prioritaire'],
     cta: 'Choisir Mensuel',
     highlight: false,
   },

@@ -1,4 +1,5 @@
 import { useInView } from '../hooks/useParallax'
+import { Features } from '../config/features'
 
 const steps = [
   {
@@ -56,15 +57,22 @@ function PlatformBanner() {
     >
       <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
         <div>
-          <h3 className="text-2xl font-bold text-black mb-2">Disponible sur le web, bientôt sur mobile</h3>
+          <h3 className="text-2xl font-bold text-black mb-2">
+            {Features.SHOW_MOBILE_APP ? 'Disponible sur le web, bientôt sur mobile' : 'Disponible sur le web'}
+          </h3>
           <p className="text-gray-500 max-w-lg text-sm leading-relaxed">
-            Accédez à LifeBoard depuis votre ordinateur sur <strong className="text-black">app.mylifeboard.app</strong>. L'application mobile iOS et Android est en cours de développement, restez informé.
+            Accédez à LifeBoard depuis votre ordinateur sur <strong className="text-black">app.mylifeboard.app</strong>.
+            {Features.SHOW_MOBILE_APP && " L'application mobile iOS et Android est en cours de développement, restez informé."}
           </p>
         </div>
         <div className="flex gap-3 shrink-0">
           <span className="border border-gray-200 rounded-lg px-4 py-2 text-sm font-medium text-gray-600">Web</span>
-          <span className="border border-dashed border-gray-200 rounded-lg px-4 py-2 text-sm font-medium text-gray-400">iOS (bientôt)</span>
-          <span className="border border-dashed border-gray-200 rounded-lg px-4 py-2 text-sm font-medium text-gray-400">Android (bientôt)</span>
+          {Features.SHOW_MOBILE_APP && (
+            <>
+              <span className="border border-dashed border-gray-200 rounded-lg px-4 py-2 text-sm font-medium text-gray-400">iOS (bientôt)</span>
+              <span className="border border-dashed border-gray-200 rounded-lg px-4 py-2 text-sm font-medium text-gray-400">Android (bientôt)</span>
+            </>
+          )}
         </div>
       </div>
     </div>

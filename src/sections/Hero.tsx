@@ -1,5 +1,6 @@
 
 import { useScrollParallax } from '../hooks/useParallax'
+import { Features } from '../config/features'
 
 const APP_URL = 'https://app.mylifeboard.app'
 
@@ -49,12 +50,16 @@ export function Hero() {
           >
             Essayer gratuitement · 7 jours
           </a>
-          <span className="text-base font-medium border border-dashed border-gray-200 px-8 py-4 rounded-xl text-gray-400 cursor-default select-none">
-            iOS (bientôt)
-          </span>
-          <span className="text-base font-medium border border-dashed border-gray-200 px-8 py-4 rounded-xl text-gray-400 cursor-default select-none">
-            Android (bientôt)
-          </span>
+          {Features.SHOW_MOBILE_APP && (
+            <>
+              <span className="text-base font-medium border border-dashed border-gray-200 px-8 py-4 rounded-xl text-gray-400 cursor-default select-none">
+                iOS (bientôt)
+              </span>
+              <span className="text-base font-medium border border-dashed border-gray-200 px-8 py-4 rounded-xl text-gray-400 cursor-default select-none">
+                Android (bientôt)
+              </span>
+            </>
+          )}
         </div>
 
         <p className="mt-8 text-sm text-gray-400">
