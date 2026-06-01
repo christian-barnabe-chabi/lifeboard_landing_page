@@ -11,11 +11,12 @@ export function Hero() {
   return (
     <div className="min-h-screen flex flex-col overflow-hidden">
       {/* Nav */}
-      <nav className="flex items-center justify-between px-8 py-6 border-b border-gray-100">
+      <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 py-6 border-b border-gray-100 bg-white/90 backdrop-blur-sm">
         <span className="text-base font-semibold tracking-tight text-[var(--color-primary)]">LifeBoard</span>
         <div className="hidden md:flex items-center gap-8 text-sm text-gray-500">
           <button onClick={() => scrollTo('features')} className="hover:text-[var(--color-primary)] transition-colors cursor-pointer bg-transparent border-none p-0">Fonctionnalités</button>
           <button onClick={() => scrollTo('pricing')} className="hover:text-[var(--color-primary)] transition-colors cursor-pointer bg-transparent border-none p-0">Tarifs</button>
+          <a href="/blog" className="hover:text-[var(--color-primary)] transition-colors">Blog</a>
         </div>
         <a
           href={APP_URL}
@@ -27,7 +28,7 @@ export function Hero() {
 
       {/* Hero */}
       <main
-        className="flex-1 flex flex-col items-center justify-center text-center px-6 py-24 max-w-4xl mx-auto w-full"
+        className="flex-1 flex flex-col items-center justify-center text-center px-6 py-24 max-w-4xl mx-auto w-full pt-[calc(6rem+80px)]"
       >
         <p className="text-sm font-medium text-[var(--color-primary)] tracking-widest uppercase mb-8">
           Tableau de bord de vie personnel

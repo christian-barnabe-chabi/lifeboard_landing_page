@@ -9,6 +9,8 @@ import { Privacy } from './pages/Privacy'
 import { DataDeletion } from './pages/DataDeletion'
 import { DataExport } from './pages/DataExport'
 import { Refund } from './pages/Refund'
+import { BlogList } from './pages/BlogList'
+import { BlogPost } from './pages/BlogPost'
 
 function Home() {
   return (
@@ -32,6 +34,8 @@ export default function App() {
         <Route path="/legal/data-deletion" element={<DataDeletion />} />
         <Route path="/legal/data-export" element={<DataExport />} />
         <Route path="/legal/refund" element={<Refund />} />
+        <Route path="/blog" element={<BlogList />} />
+        <Route path="/blog/:slug" element={<BlogPost />} />
       </Routes>
     </BrowserRouter>
   )
