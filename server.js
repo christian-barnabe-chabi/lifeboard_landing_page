@@ -10,7 +10,15 @@ const template = fs.readFileSync(path.join(dist, 'index.html'), 'utf-8')
 
 const BOT_UA = /bot|crawler|spider|facebookexternalhit|twitterbot|linkedinbot|whatsapp|slackbot|telegrambot|googlebot|bingbot/i
 
-app.use(express.static(dist))
+app.use(express.static(dist, {
+  setHeaders(res, filePath) {
+    if (filePath.includes('/assets/')) {
+      res.setHeader('Cache-Control', 'public, max-age=31536000, immutable')
+    } else if (filePath.endsWith('index.html')) {
+      res.setHeader('Cache-Control', 'no-cache')
+    }
+  },
+}))
 
 app.get('/blog/:slug', async (req, res) => {
   if (!BOT_UA.test(req.headers['user-agent'] || '')) {
@@ -44,6 +52,9 @@ app.get('/blog/:slug', async (req, res) => {
   }
 })
 
-app.get('/{*splat}', (_req, res) => res.sendFile(path.join(dist, 'index.html')))
+app.get('/{*splat}', (_req, res) => {
+  res.setHeader('Cache-Control', 'no-cache')
+  res.sendFile(path.join(dist, 'index.html'))
+})
 
 app.listen(PORT, () => console.log(`Landing page server on port ${PORT}`))
