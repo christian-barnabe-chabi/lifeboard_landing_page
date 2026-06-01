@@ -44,6 +44,6 @@ app.get('/blog/:slug', async (req, res) => {
   }
 })
 
-app.get('*', (_req, res) => res.sendFile(path.join(dist, 'index.html')))
+app.get('/{*splat}', (_req, res) => res.sendFile(path.join(dist, 'index.html')))
 
 app.listen(PORT, () => console.log(`Landing page server on port ${PORT}`))
