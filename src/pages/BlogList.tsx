@@ -43,7 +43,7 @@ export function BlogList() {
 
       <main className="max-w-4xl mx-auto px-6 py-16 pt-36">
         <h1 className="text-3xl font-bold text-gray-900 mb-2">Blog</h1>
-        <p className="text-gray-500 mb-12">Conseils et stratégies sur la finance personnelle</p>
+        <p className="text-gray-500 mb-12">Conseils, stratégies et inspirations pour mieux gérer votre vie</p>
 
         {loading ? (
           <div className="flex justify-center py-20">
