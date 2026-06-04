@@ -108,7 +108,7 @@ export function BlogPost() {
   return (
     <div className="min-h-screen bg-white text-gray-900 antialiased">
       {/* Nav */}
-      <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 py-6 border-b border-gray-100 bg-white/90 backdrop-blur-sm">
+      <nav className="flex items-center justify-between px-8 py-6 border-b border-gray-100 bg-white">
         <Link to="/" className="text-base font-semibold tracking-tight text-[var(--color-primary)]">LifeBoard</Link>
         <div className="hidden md:flex items-center gap-8 text-sm text-gray-500">
           <Link to="/" className="hover:text-[var(--color-primary)] transition-colors">Accueil</Link>
@@ -122,7 +122,7 @@ export function BlogPost() {
         </a>
       </nav>
 
-      <main className="max-w-3xl mx-auto px-6 py-16 pt-36">
+      <main className="max-w-3xl mx-auto px-6 py-16">
         {loading ? (
           <div className="flex justify-center py-20">
             <div className="w-8 h-8 border-2 border-[var(--color-primary)] border-t-transparent rounded-full animate-spin" />
