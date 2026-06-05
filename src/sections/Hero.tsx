@@ -31,7 +31,7 @@ export function Hero() {
 
         <div className="flex flex-col sm:flex-row items-center gap-4">
           <a
-            href={APP_URL}
+            href="https://app.mylifeboard.app"
             className="bg-[var(--color-primary)] text-white font-medium px-8 py-4 rounded-xl text-base hover:opacity-90 transition-opacity"
           >
             Essayer gratuitement · 7 jours
