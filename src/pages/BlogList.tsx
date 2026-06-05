@@ -45,16 +45,16 @@ export function BlogList() {
         ) : (
           <div className="grid gap-8">
             {posts.map(post => (
-              <Link key={post.id} to={`/blog/${post.slug}`} className="group flex gap-6 items-start">
+              <Link key={post.id} to={`/blog/${post.slug}`} className="group flex flex-col sm:flex-row gap-4 sm:gap-6 items-start">
                 {post.coverImage && (
                   <img
                     src={post.coverImage}
                     alt={post.title}
-                    className="w-48 h-32 object-cover rounded-xl flex-shrink-0 group-hover:opacity-90 transition-opacity"
+                    className="w-full sm:w-48 h-48 sm:h-32 object-cover rounded-xl flex-shrink-0 group-hover:opacity-90 transition-opacity"
                   />
                 )}
                 <div className="flex-1 min-w-0">
-                  <h2 className="text-xl font-semibold text-gray-900 group-hover:text-[var(--color-primary)] transition-colors mb-2">
+                  <h2 className="text-lg sm:text-xl font-semibold text-gray-900 group-hover:text-[var(--color-primary)] transition-colors mb-2">
                     {post.title}
                   </h2>
                   {post.excerpt && (

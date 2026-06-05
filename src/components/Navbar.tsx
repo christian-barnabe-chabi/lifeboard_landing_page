@@ -24,7 +24,19 @@ export function Navbar({ items, sticky = true }: NavbarProps) {
   return (
     <>
       <nav className={`${navClass} flex items-center justify-between px-6 md:px-8 py-5 border-b border-gray-100`}>
-        <a href="/" className="text-base font-semibold tracking-tight text-[var(--color-primary)]">LifeBoard</a>
+        <div className="flex items-center gap-3">
+          {/* Hamburger — left, mobile only */}
+          <button
+            className="md:hidden flex flex-col gap-1.5 p-1 cursor-pointer"
+            onClick={() => setOpen(true)}
+            aria-label="Menu"
+          >
+            <span className="block w-5 h-0.5 bg-gray-700" />
+            <span className="block w-5 h-0.5 bg-gray-700" />
+            <span className="block w-5 h-0.5 bg-gray-700" />
+          </button>
+          <a href="/" className="text-base font-semibold tracking-tight text-[var(--color-primary)]">LifeBoard</a>
+        </div>
 
         {/* Desktop links */}
         <div className="hidden md:flex items-center gap-8 text-sm text-gray-500">
@@ -49,24 +61,12 @@ export function Navbar({ items, sticky = true }: NavbarProps) {
           ))}
         </div>
 
-        <div className="flex items-center gap-3">
-          <a
-            href={APP_URL}
-            className="text-sm font-medium bg-[var(--color-primary)] text-white px-4 py-2 rounded-lg hover:opacity-90 transition-opacity"
-          >
-            Commencer
-          </a>
-          {/* Hamburger */}
-          <button
-            className="md:hidden flex flex-col gap-1.5 p-1 cursor-pointer"
-            onClick={() => setOpen(true)}
-            aria-label="Menu"
-          >
-            <span className="block w-5 h-0.5 bg-gray-700" />
-            <span className="block w-5 h-0.5 bg-gray-700" />
-            <span className="block w-5 h-0.5 bg-gray-700" />
-          </button>
-        </div>
+        <a
+          href={APP_URL}
+          className="hidden md:inline-block text-sm font-medium bg-[var(--color-primary)] text-white px-4 py-2 rounded-lg hover:opacity-90 transition-opacity"
+        >
+          Commencer
+        </a>
       </nav>
 
       {/* Mobile drawer */}
