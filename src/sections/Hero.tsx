@@ -1,7 +1,6 @@
 
 import { Features } from '../config/features'
-
-const APP_URL = 'https://app.mylifeboard.app'
+import { Navbar } from '../components/Navbar'
 
 function scrollTo(id: string) {
   document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
@@ -10,21 +9,11 @@ function scrollTo(id: string) {
 export function Hero() {
   return (
     <div className="min-h-screen flex flex-col overflow-hidden">
-      {/* Nav */}
-      <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 py-6 border-b border-gray-100 bg-white/90 backdrop-blur-sm">
-        <span className="text-base font-semibold tracking-tight text-[var(--color-primary)]">LifeBoard</span>
-        <div className="hidden md:flex items-center gap-8 text-sm text-gray-500">
-          <button onClick={() => scrollTo('features')} className="hover:text-[var(--color-primary)] transition-colors cursor-pointer bg-transparent border-none p-0">Fonctionnalités</button>
-          <button onClick={() => scrollTo('pricing')} className="hover:text-[var(--color-primary)] transition-colors cursor-pointer bg-transparent border-none p-0">Tarifs</button>
-          <a href="/blog" className="hover:text-[var(--color-primary)] transition-colors">Blog</a>
-        </div>
-        <a
-          href={APP_URL}
-          className="text-sm font-medium bg-[var(--color-primary)] text-white px-4 py-2 rounded-lg hover:opacity-90 transition-opacity"
-        >
-          Commencer
-        </a>
-      </nav>
+      <Navbar items={[
+        { label: 'Fonctionnalités', onClick: () => scrollTo('features') },
+        { label: 'Tarifs', onClick: () => scrollTo('pricing') },
+        { label: 'Blog', href: '/blog' },
+      ]} />
 
       {/* Hero */}
       <main

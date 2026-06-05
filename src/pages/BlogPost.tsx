@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback } from 'react'
 import { Link, useParams, useNavigate } from 'react-router-dom'
+import { Navbar } from '../components/Navbar'
 
 const API = (import.meta.env.VITE_API_URL as string) ?? '/api'
 
@@ -107,20 +108,10 @@ export function BlogPost() {
 
   return (
     <div className="min-h-screen bg-white text-gray-900 antialiased">
-      {/* Nav */}
-      <nav className="flex items-center justify-between px-8 py-6 border-b border-gray-100 bg-white">
-        <Link to="/" className="text-base font-semibold tracking-tight text-[var(--color-primary)]">LifeBoard</Link>
-        <div className="hidden md:flex items-center gap-8 text-sm text-gray-500">
-          <Link to="/" className="hover:text-[var(--color-primary)] transition-colors">Accueil</Link>
-          <Link to="/blog" className="hover:text-[var(--color-primary)] transition-colors">Blog</Link>
-        </div>
-        <a
-          href="https://app.mylifeboard.app"
-          className="text-sm font-medium bg-[var(--color-primary)] text-white px-4 py-2 rounded-lg hover:opacity-90 transition-opacity"
-        >
-          Commencer
-        </a>
-      </nav>
+      <Navbar sticky={false} items={[
+        { label: 'Accueil', href: '/' },
+        { label: 'Blog', href: '/blog' },
+      ]} />
 
       <main className="max-w-3xl mx-auto px-6 py-16">
         {loading ? (
